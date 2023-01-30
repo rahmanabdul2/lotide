@@ -11,8 +11,8 @@ const assertEqual = function(actual, expected) {
 
 
 
-const head = function (arr) {
- return arr.shift();
+const head = function(arr) {
+  return arr.shift();
 };
 
 
