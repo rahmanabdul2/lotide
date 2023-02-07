@@ -1,8 +1,8 @@
 const assertArraysEqual = function(arr1, arr2) {
   if (eqArrays(arr1, arr2)) {
-    console.log(`Assertation Passed: ${arr1} === ${arr2}`);
+    console.log(`✅✅✅Assertation Passed: ${arr1} === ${arr2}`);
   } else {
-    console.log(`Assertation Failed: ${arr1} !== ${arr2}`);
+    console.log(`🛑🛑🛑Assertation Failed: ${arr1} !== ${arr2}`);
   }
 };
 
@@ -30,7 +30,7 @@ const without = function(source, itemsToRemove) {
   // must return a new ARRAY.
   let output = [];
 
-  // Loop thru the array
+  // Loop thru the array (C-loop)
   for (let i = 0; i < source.length; i++) {
     if (source[i] !== itemsToRemove[i]) {
       output.push(source[i]);

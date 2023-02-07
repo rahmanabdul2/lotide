@@ -12,17 +12,17 @@ const assertEqual = function(actual, expected) {
 
 //countOnly will be given an array and an object.
 const countOnly = function(allItems, itemsToCount) {
-  var result = {};
+  let result = {};
 
   // Loop thru allItems
-  for (var item of allItems) {
+  for (let item of allItems) {
 
     // if the item from allItems exist within itemToCount (true)
     if (itemsToCount[item]) {
       // if item does not exist then set its value to 1
       if (!result[item]) {
         result[item] = 1;
-          // if item exist then count it
+        // if item exist then count it
       } else {
         result[item] += 1;
       }
