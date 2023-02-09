@@ -2,7 +2,7 @@
 
 const words = ["ground", "control", "to", "major", "tom"];
 
-const map = function(array, callback) {
+const myOwnMap = function(array, callback) {
   const results = [];
   for (let item of array) {
     results.push(callback(item));
@@ -11,7 +11,9 @@ const map = function(array, callback) {
 };
 
 
-const results = map(words, word => word[0]); // takes word as argument and returns the first letter
+const output = myOwnMap(words, function(word) { // anonymous function takes a word (item)
+  return word[0]; // takes word as argument and returns the first letter
+}); 
 
 
 
@@ -40,4 +42,4 @@ const assertArrayEqual = function(arr1, arr2) {
 };
 
 
-assertArrayEqual(results, ['g', 'c', 't', 'm', 't']); // Passed
+assertArrayEqual(output, ['g', 'c', 't', 'm', 't']); // Passed

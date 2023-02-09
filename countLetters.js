@@ -4,10 +4,10 @@ const countLetters = function(string) {
 
   for (let letter of string) {
     if (letter !== ' ') { // filter out the space ... continue
-      if (countedLetters[letter]) {
-        countedLetters[letter] += 1;
-      } else {
+      if (!countedLetters[letter]) {
         countedLetters[letter] = 1;
+      } else {
+        countedLetters[letter] += 1;
       }
     }
   }
