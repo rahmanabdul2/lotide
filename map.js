@@ -13,7 +13,7 @@ const myOwnMap = function(array, callback) {
 
 const output = myOwnMap(words, function(word) { // anonymous function takes a word (item)
   return word[0]; // takes word as argument and returns the first letter
-}); 
+});
 
 
 
