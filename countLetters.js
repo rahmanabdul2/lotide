@@ -15,6 +15,7 @@ const countLetters = function(string) {
 };
 
 
+module.exports = countLetters;
 
 
 

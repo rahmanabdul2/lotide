@@ -10,7 +10,7 @@ const reverseString = function(args) {
   }
   return reversed;
 };
-console.log(reverseString("hey how are you"));
+
 
 
 
